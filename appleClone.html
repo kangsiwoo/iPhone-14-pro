@@ -1,10 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>1201강시우</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/section1.css">
+  <link rel="stylesheet" href="./css/section2.css">
+  <link rel="stylesheet" href="./css/dynamicIseland.css">
+  <title>1201강시우</title>
 </head>
 <body>
+<section class=section1>
+  <header>
+    <ul>
+      <li><img class="logo" src="./source/Apple_logo.svg" alt=""></li>
+      <li>Store</li>
+      <li>Mac</li>
+      <li>iPad</li>
+      <li>iPhone</li>
+      <li>Watch</li>
+      <li>Vision</li>
+      <li>AirPods</li>
+      <li>TV & Home</li>
+      <li>Entertainment</li>
+      <li>Accessories</li>
+      <li>Support</li>
+      <li><img class="search" src="./source/search.svg" alt=""></li>
+      <li><img class="shop" src="./source/shopping_bag.svg" alt="shop"></li>
+    </ul>
+  </header>
+  <div class="wrapper">
+    <div>
+      <ul>iPhone 14 Pro</ul>
+      <ul>
+        <li>Overview</li>
+        <li>Switch from Android to iPhone</li>
+        <li>Tech Specs</li>
+        <li><button class="topButton">buy</button></li>
+      </ul>
+    </div>
+  </div>
+  <main>
+    <section class="select">
+      <h1>Pro. Beyond.</h1>
+      <ul>
+        <li>Deep Purple</li>
+        <li>
+          <label>
+            <div id="ColorDP" class="color"></div>
+          </label>
+        </li>
+        <li>
+          <label>
+            <div id="ColorG" class="color"></div>
+          </label>
+        </li>
+        <li>
+          <label>
+            <div id="ColorS" class="color"></div>
+          </label>
+        </li>
+        <li>
+          <label>
+            <div id="ColorSB" class="color"></div>
+          </label>
+        </li>
+      </ul>
+    </section>
+    <section class="allIphoneVideo">
+      <img src="./source/hero_space_black__d2ll5e0lazcm_large.jpg" alt="" class="allImages" id="iphoneSB">
+      <img src="./source/hero_silver__8is8ix39ybm2_large.jpg" alt="" class="allImages" id="iphoneS">
+      <img src="./source/hero_deep_purple__dlhl8s8j6wk2_large.jpg" alt="" class="allImages" id="iphoneDP">
+      <img src="./source/hero_gold__eys85yr14k2u_large.jpg" alt="" class="allImages" id="iphoneG">
 
+      <video muted autoplay id="iphoneVideo">
+        <source src="./source/alliphone.mp4" type="video/mp4">
+      </video>
+    </section>
+    <script>
+        var video = document.getElementById('iphoneVideo');
+        var DP = document.getElementById('ColorDP');
+        var G = document.getElementById('ColorG');
+        var S = document.getElementById('ColorS');
+        var SB = document.getElementById('ColorSB');
+        var imageDP = document.getElementById('iphoneDP');
+        var imageG = document.getElementById('iphoneG');
+        var imageS = document.getElementById('iphoneS');
+        var imageSB = document.getElementById('iphoneSB');
+        var opacity = 1;
+        var fadeInterval;
+        var showImage = imageDP;
+        var after = imageDP;
+
+        setTimeout(function() {
+            fadeInterval = setInterval(function() {
+                opacity -= 0.01; // 투명도 감소량
+                video.style.opacity = opacity;
+
+                if (opacity <= 0) {
+                    clearInterval(fadeInterval); // 투명도가 0이 되면 반복 종료
+                }
+            }, 5); // 각 단계의 시간 간격 (밀리초)
+        }, 5100); // 5.1초 동안 대기 (밀리초)
+
+        setTimeout(function() {
+            opacity = 0;
+            fadeInterval = setInterval(function() {
+                opacity += 0.01; // 투명도 감소량
+                after.style.opacity = opacity;
+
+                if (opacity >= 1) {
+                    clearInterval(fadeInterval); // 투명도가 0이 되면 반복 종료
+                }
+            }, 5); // 각 단계의 시간 간격 (밀리초)
+        }, 5890); // 5.890초 동안 대기 (밀리초)
+    </script>
+
+
+  </main>
+</section>
+<section class="section2">
+  <h1>iPhone 14 Pro and iPhone 14 Pro Max</h1>
+  <h3>From $999 or $41.62/mo. for 24 mo. before trade‑in*</h3>
+  <button>Buy</button>
+
+  <div class="group-1">
+    <section class="dynamicIsland">
+    </section>
+    <section class="camera">
+    </section>
+    <section class="A16"></section>
+  </div>
+</section>
 </body>
 </html>

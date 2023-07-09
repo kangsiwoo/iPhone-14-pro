@@ -1,0 +1,9 @@
+.group-1
+{
+    display: flex;
+    margin-top: 100px;
+    float: left;
+    width: 70%;
+    height: 50px;
+    background-color: white;
+}

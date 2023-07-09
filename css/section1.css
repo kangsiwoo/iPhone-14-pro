@@ -1,0 +1,115 @@
+main
+{
+    display: flex;
+    flex-direction: column;
+    /*width: 994px;*/
+}
+
+
+.select
+{
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+
+.select h1
+{
+    color: white;
+    float: left;
+    font-size: 72px;
+    margin-top: 10px;
+}
+
+.select ul
+{
+    display: flex;
+    padding: 0;
+    float: right;
+    align-items: center;
+}
+
+.select ul li
+{
+    color: white;
+    margin-right: 8px;
+}
+
+.select ul li:last-child
+{
+    margin-right: 18px;
+}
+
+.select ul li li
+{
+    float: none;
+}
+
+.color
+{
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+}
+
+#ColorDP
+{
+    background-color: #594f63;
+}
+
+#ColorG
+{
+    background-color: #f4e8ce;
+}
+
+#ColorS
+{
+    background-color: #ffffff;
+}
+
+#ColorSB
+{
+    background-color: #403e3d;
+}
+
+.allIphoneVideo
+{
+    margin-top: 577px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.allIphoneVideo img
+{
+    width: 50%;
+    height: 511.7px;
+    margin-top: -511.7px;
+    opacity: 0%;
+}
+
+
+.allIphoneVideo video
+{
+    /*width: 998px;*/
+    height: 511.3px;
+    margin-top: -511.7px;
+}
+
+#ProProMax
+{
+    display: flex;
+    justify-content: center;
+    width: 100vi;
+    height: 260.2px;
+    background-color: #161617;
+}
+
+
