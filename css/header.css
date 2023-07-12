@@ -9,6 +9,7 @@ html
 
 .section1
 {
+    align-items: center;
     display: flex;
     /*justify-content: center;*/
     width: 80vi;
@@ -51,6 +52,20 @@ ul li:last-child
 .logo, .search, .shop
 {
     width: 13px;
+}
+
+ul li a
+{
+    color: lightgray;
+    text-decoration: none;
+}
+
+.iPhone
+{
+    display: flex;
+    flex-direction: column;
+    width: 1049px;
+    flex-basis: 1049px;
 }
 
 .wrapper
@@ -126,6 +141,4 @@ ul li:last-child
     padding-right: 10px;
     padding-top: 3px;
     padding-bottom: 3px;
-    --sk-button-margin-horizontal: 10px;
-    --sk-button-margin-vertical: 10px;
 }

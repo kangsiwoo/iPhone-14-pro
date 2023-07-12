@@ -6,111 +6,114 @@
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/section1.css">
   <link rel="stylesheet" href="./css/section2.css">
-  <link rel="stylesheet" href="./css/dynamicIseland.css">
+  <link rel="stylesheet" href="./css/spec.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <title>1201강시우</title>
-  <link rel="stylesheet" href="css/dynamicIseland.css">
+  <link rel="stylesheet" href="css/spec.css">
 </head>
 <body>
 <section class=section1>
   <header>
     <ul>
       <li><img class="logo" src="./source/Apple_logo.svg" alt=""></li>
-      <li>Store</li>
-      <li>Mac</li>
-      <li>iPad</li>
-      <li>iPhone</li>
-      <li>Watch</li>
-      <li>Vision</li>
-      <li>AirPods</li>
-      <li>TV & Home</li>
-      <li>Entertainment</li>
-      <li>Accessories</li>
-      <li>Support</li>
-      <li><img class="search" src="./source/search.svg" alt=""></li>
+      <li><a href="https://www.apple.com/store">Store</a></li>
+      <li><a href="https://www.apple.com/mac/">Mac</a></li>
+      <li><a href="https://www.apple.com/ipad/">iPad</a></li>
+      <li><a href="https://www.apple.com/iPhone/">iPhone</a></li>
+      <li><a href="https://www.apple.com/Watch/">Watch</a></li>
+      <li><a href="https://www.apple.com/apple-vision-pro/">Vision</a></li>
+      <li><a href="https://www.apple.com/AirPods/">AirPods</a></li>
+      <li><a href="https://www.apple.com/tv-home/"></a>TV & Home</li>
+      <li><a href="https://www.apple.com/services/">Entertainment</a></li>
+      <li><a href="https://www.apple.com/shop/accessories/all/">Accessories</a></li>
+      <li><a href="https://support.apple.com/?cid=gn-ols-home-hp-tab">Support</a></li>
+      <li><img class="search" src="./source/search_FILL0_wght400_GRAD0_opsz48.svg" alt=""></li>
       <li><img class="shop" src="./source/shopping_bag.svg" alt="shop"></li>
     </ul>
   </header>
-  <div class="wrapper">
-    <div>
-      <ul>iPhone 14 Pro</ul>
-      <ul>
-        <li>Overview</li>
-        <li>Switch from Android to iPhone</li>
-        <li>Tech Specs</li>
-        <li><button class="topButton">buy</button></li>
-      </ul>
+  <section class="iPhone">
+    <div class="wrapper">
+      <div>
+        <ul>iPhone 14 Pro</ul>
+        <ul>
+          <li>Overview</li>
+          <li>Switch from Android to iPhone</li>
+          <li>Tech Specs</li>
+          <li><button class="topButton">buy</button></li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <main>
-    <section class="select">
-      <h1>Pro. Beyond.</h1>
-      <ul>
-        <li>Deep Purple</li>
-        <li>
-          <label>
-            <div id="ColorDP" class="color"></div>
-          </label>
-        </li>
-        <li>
-          <label>
-            <div id="ColorG" class="color"></div>
-          </label>
-        </li>
-        <li>
-          <label>
-            <div id="ColorS" class="color"></div>
-          </label>
-        </li>
-        <li>
-          <label>
-            <div id="ColorSB" class="color"></div>
-          </label>
-        </li>
-      </ul>
-    </section>
-    <section class="allIphoneVideo">
-      <img src="./source/hero_space_black__d2ll5e0lazcm_large.jpg" alt="" class="allImages" id="iphoneSB">
-      <img src="./source/hero_silver__8is8ix39ybm2_large.jpg" alt="" class="allImages" id="iphoneS">
-      <img src="./source/hero_deep_purple__dlhl8s8j6wk2_large.jpg" alt="" class="allImages" id="iphoneDP">
-      <img src="./source/hero_gold__eys85yr14k2u_large.jpg" alt="" class="allImages" id="iphoneG">
+    <main>
+      <section class="select">
+        <h1>Pro. Beyond.</h1>
+        <ul>
+          <li>Deep Purple</li>
+          <li>
+            <label>
+              <div id="ColorDP" class="color"></div>
+            </label>
+          </li>
+          <li>
+            <label>
+              <div id="ColorG" class="color"></div>
+            </label>
+          </li>
+          <li>
+            <label>
+              <div id="ColorS" class="color"></div>
+            </label>
+          </li>
+          <li>
+            <label>
+              <div id="ColorSB" class="color"></div>
+            </label>
+          </li>
+        </ul>
+      </section>
+      <section class="allIphoneVideo">
+        <video muted autoplay id="iphoneVideo">
+          <source src="./source/alliphone.mp4" type="video/mp4">
+        </video>
+        <img src="./source/hero_space_black__d2ll5e0lazcm_large.jpg" alt="" class="allImages" id="iphoneSB">
+        <img src="./source/hero_silver__8is8ix39ybm2_large.jpg" alt="" class="allImages" id="iphoneS">
+        <img src="./source/hero_deep_purple__dlhl8s8j6wk2_large.jpg" alt="" class="allImages" id="iphoneDP">
+        <img src="./source/hero_gold__eys85yr14k2u_large.jpg" alt="" class="allImages" id="iphoneG">
 
-      <video muted autoplay id="iphoneVideo">
-        <source src="./source/alliphone.mp4" type="video/mp4">
-      </video>
-    </section>
-    <script>
-        var video = document.getElementById('iphoneVideo');
-        var imageDP = document.getElementById('iphoneDP');
-        var opacity = 1;
-        var fadeInterval;
-        var after = imageDP;
+      </section>
+      <script>
+          var video = document.getElementById('iphoneVideo');
+          var imageDP = document.getElementById('iphoneDP');
+          var opacity = 1;
+          var fadeInterval;
+          var after = imageDP;
 
-        setTimeout(function() {
-            fadeInterval = setInterval(function() {
-                opacity -= 0.01; // 투명도 감소량
-                video.style.opacity = opacity;
+          setTimeout(function() {
+              fadeInterval = setInterval(function() {
+                  opacity -= 0.01; // 투명도 감소량
+                  video.style.opacity = opacity;
 
-                if (opacity <= 0) {
-                    clearInterval(fadeInterval); // 투명도가 0이 되면 반복 종료
-                }
-            }, 5); // 각 단계의 시간 간격 (밀리초)
-        }, 5100); // 5.1초 동안 대기 (밀리초)
+                  if (opacity <= 0) {
+                      clearInterval(fadeInterval); // 투명도가 0이 되면 반복 종료
+                  }
+              }, 5); // 각 단계의 시간 간격 (밀리초)
+          }, 5100); // 5.1초 동안 대기 (밀리초)
 
-        setTimeout(function() {
-            opacity = 0;
-            fadeInterval = setInterval(function() {
-                opacity += 0.01; // 투명도 감소량
-                after.style.opacity = opacity;
+          setTimeout(function() {
+              opacity = 0;
+              fadeInterval = setInterval(function() {
+                  opacity += 0.01; // 투명도 감소량
+                  after.style.opacity = opacity;
 
-                if (opacity >= 1) {
-                    clearInterval(fadeInterval); // 투명도가 0이 되면 반복 종료
-                }
-            }, 5); // 각 단계의 시간 간격 (밀리초)
-        }, 5890); // 5.890초 동안 대기 (밀리초)
-    </script>
+                  if (opacity >= 1) {
+                      clearInterval(fadeInterval); // 투명도가 0이 되면 반복 종료
+                  }
+              }, 5); // 각 단계의 시간 간격 (밀리초)
+          }, 5890); // 5.890초 동안 대기 (밀리초)
+      </script>
 
 
-  </main>
+    </main>
+  </section>
 </section>
 <section class="section2">
   <h1>iPhone 14 Pro and iPhone 14 Pro Max</h1>
@@ -124,12 +127,30 @@
   </section>
   <div class="group-1-1">
     <section class="camera">
-      <img src="./source/camera_deep_purple__fviv8fv1dyqa_large.jpg" alt="">
+      <div class="gradient"></div>
+      <h3>48MP Main camera.<br>Mind-blowing detail.</h3>
     </section>
     <section class="A16">
-      <img src="./source/dd_chip__rvlsm1bvvgi2_large.jpg" alt="">
+      <h3>The<br>mastermind<br>behind it all.</h3>
     </section>
   </div>
 </div>
+<div class="group-2">
+  <section class="battery">
+    <h3 class="text top">A battery that’s</h3>
+    <h1 class="text middle">all in,</h1>
+    <h1 class="text bottom">all day.</h1>
+  </section>
+  <section class="ProVideo">
+    <div class="video-container">
+      <video src="./source/movie.mp4" autoplay muted></video>
+      <h3 class="video-sub">Pro video</h3>
+      <h1 class="video-title">Film like a Pro.</h1>
+    </div>
+  </section>
+</div>
+<footer>
+  <p>Made By Kang Si-woo</p>
+</footer>
 </body>
 </html>

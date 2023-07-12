@@ -7,11 +7,11 @@
     margin-left: -10vi;
     background-color: #161617;
     flex-direction: row;
-    padding-bottom: 50px;
 }
 
 .group-1 .dynamicIsland
 {
+    height: 655.2px;
     float: left;
     border-radius: 20px;
     background-color: black ;
@@ -45,10 +45,11 @@
 
 .group-1 .camera
 {
+
     align-items: flex-end;
     display: flex;
-    width: 19vi;
-    height: 19vi;
+    width: 319.2px;
+    height: 319.2px;
     border-radius: 20px;
     background: black;
     margin-bottom: 1vi;
@@ -82,8 +83,8 @@
 
 .group-1 .A16
 {
-    width: 19vi;
-    height: 19vi;
+    width: 319.2px;
+    height: 319.2px;
     border-radius: 20px;
     background: black;
     background-image: url(".././source/dd_chip__rvlsm1bvvgi2_large.jpg");
@@ -103,4 +104,142 @@
     font-size: 40px;
     padding-left: 2vi;
     padding-top: 1vi;
+}
+
+.group-2
+{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    padding: 0 10vi 0 10vi;
+    margin-left: -10vi;
+    background-color: #161617;
+    flex-direction: row;
+}
+
+.group-2 .battery
+{
+    margin-top: 1vi;
+    align-items: flex-end;
+    display: flex;
+    width: 256.1px;
+    height: 17vi;
+    border-radius: 20px;
+    background: black;
+    margin-bottom: 1vi;
+    color: #cecece;
+}
+
+.group-2 .ProVideo {
+    margin-top: 1vi;
+    margin-left: 1vi;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 588px;
+    height: 17vi;
+    border-radius: 20px;
+    background: black;
+    margin-bottom: 1vi;
+    color: #cecece;
+    overflow: hidden; /* 영상을 섹션 내에 제한 */
+}
+
+.group-2 .ProVideo video {
+    position: relative; /* position 값을 relative로 변경 */
+    width: 112%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.group-2 .ProVideo h1 {
+    width: 100%;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 120%);
+    margin: 0;
+    padding: 10px;
+    color: #cecece;
+    text-align: center;
+}
+
+.group-2 .ProVideo h3 {
+    width: 100%;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 110%);
+    margin: 0;
+    padding: 10px;
+    color: #cecece;
+    text-align: center;
+}
+
+
+.group-2 .ProVideo h2
+{
+    position: relative;
+    top: 10px;
+}
+
+.group-2 .battery
+{
+    position: relative; /* position 값을 relative로 변경 */
+    object-fit: cover;
+}
+
+.group-2 .battery .text
+{
+    width: 100%;
+    font-size: 24px;
+    position: absolute;
+    margin: 0;
+    padding: 10px;
+    color: #cecece;
+    text-align: center;
+}
+
+.group-2 .battery .top
+{
+    transform: translate(-12%, -360%);
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    will-change: transform;
+    overflow: hidden;
+    background-color: #ffb6ff;
+}
+
+.group-2 .battery .middle
+{
+    font-size: 55px;
+    transform: translate(-11%, -127%);
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    will-change: transform;
+    overflow: hidden;
+    background-color: #ffb6ff;
+}
+
+.group-2 .battery .bottom
+{
+    font-size: 55px;
+    transform: translate(5%, -77%);
+    display: inline-block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    will-change: transform;
+    overflow: hidden;
+    background-color: #ffb6ff;
 }

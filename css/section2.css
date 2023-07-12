@@ -1,5 +1,6 @@
 .section2
 {
+    margin-top: -322.5px;
     display: flex;
     width: 100%;
     height: 260.2px;
@@ -13,7 +14,6 @@
 
 .section2 h1
 {
-
     color: #cecece;
     padding-top: 84px;
     font-size: 32px;
