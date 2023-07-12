@@ -2,5 +2,5 @@
 
 ## 개발 환경
 Tool : jetbrains WebStorm <br>
-Browser : Chrome
+Browser : Chrome <br>
 Display size : 1640X770
