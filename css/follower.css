@@ -1,0 +1,22 @@
+#follower
+{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    border-radius: 35px;
+    padding: 20px;
+    color: white;
+    width: 100vi;
+    height: auto;
+    float: left;
+    position: fixed;
+    left: 390px;
+    top: 130px;
+    z-index: 999;
+}
+
+#follower ul li
+{
+    float: left;
+    margin-right: 5px;
+}

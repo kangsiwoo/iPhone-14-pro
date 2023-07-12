@@ -56,6 +56,21 @@ main
     transition: opacity 1s ease;
 }
 
+#select
+{
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vi;
+    display: flex;
+}
+
+#select ul
+{
+    margin-left: 68%;
+}
+
 .color
 {
     border-radius: 100px;
