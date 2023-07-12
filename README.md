@@ -5,3 +5,7 @@
 Tool : jetbrains WebStorm <br>
 Browser : Chrome <br>
 Display size : 1640X770
+
+## 주요기능
+Pro. Beyond. 옆에 4가지 색을 눌러서 색을 바꿀 수 있음<br>
+색을 바꿀 수 있는 부분이 스크롤과 연동되어 따라옴
