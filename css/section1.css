@@ -126,7 +126,7 @@ main
 
 .allIphoneVideo img
 {
-    transition: opacity 1s ease;
+    transition: all 1s ease;
 }
 
 #iphoneVideo

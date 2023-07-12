@@ -30,6 +30,7 @@
 
 .group-1 .dynamicIsland img
 {
+    transition: opacity 1s ease;
     margin-top: 35px;
     padding-left: 50px;
     padding-right: 50px;
@@ -237,4 +238,5 @@
     background-clip: text;
     background-color: #ffb6ff;
     background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
+    transition: opacity 1s ease;
 }
