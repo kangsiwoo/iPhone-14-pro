@@ -33,7 +33,7 @@ function changeColor(color) {
                 });
             }
             document.getElementById("DIPicture").src = "./source/DI-" + color + ".jpg"
-            document.getElementById("A16").style.backgroundImage = 'url(".././source/chip-' + color + '.jpg")'
+            document.getElementById("A16").style.backgroundImage = 'url("https://raw.githubusercontent.com/kangsiwoo/Apple-Site-Clone/main/source/chip-' + color + '.jpg")'
             document.querySelectorAll(".textGradient").forEach(element => {
                 element.style.opacity = 1;
             });
