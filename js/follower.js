@@ -5,12 +5,13 @@ var follow = true;
 
 window.addEventListener('scroll', function() {
     scrollTop = document.documentElement.scrollTop;
-    console.log(scrollTop);
+    console.log(scrollTop + "\t||\t" + oldScroll + "\t||\t" + follower.style.top);
 
     if (scrollTop > 131) {
         follow = false;
         follower.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
         follower.style.top = "0";
+        console.log("A")
     } else {
         follow = true;
         follower.style.backgroundColor = "rgba(0, 0, 0, 0)";
