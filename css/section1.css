@@ -50,6 +50,12 @@ main
     float: none;
 }
 
+#iphoneColorDisplay
+{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
 .color
 {
     border-radius: 100px;

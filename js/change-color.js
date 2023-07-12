@@ -1,9 +1,22 @@
 var nowColor = "DP"
+var iphoneColorDisplay = "Deep Purple"
 function changeColor(color) {
     if (changeAllow === true) {
         if (nowColor !== color) {
+            if (color === "DP") {
+                iphoneColorDisplay = "Deep Purple"
+            } else if (color === "G") {
+                iphoneColorDisplay = "Gold"
+            } else if (color === "S") {
+                iphoneColorDisplay = "Silver"
+            } else {
+                iphoneColorDisplay = "Space Black"
+            }
             document.getElementById("iphone" + nowColor).style.opacity = 0
+            document.getElementById("iphoneColorDisplay").style.opacity = 0
             setTimeout(function() {
+                document.getElementById("iphoneColorDisplay").textContent = iphoneColorDisplay
+                document.getElementById("iphoneColorDisplay").style.opacity = 1
                 document.getElementById("iphone" + color).style.opacity = 1
                 document.getElementById("DIPicture").src = "./source/DI-" + color + ".jpg"
                 document.getElementById("A16").style.backgroundImage = 'url(".././source/chip-' + color + '.jpg")'
