@@ -23,12 +23,9 @@
     padding-top: 31px;
     text-align: center;
     color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
     will-change: transform;
     overflow: hidden;
-    background-color: #ffb6ff;
 }
 
 .group-1 .dynamicIsland img
@@ -81,24 +78,22 @@
 
 }
 
-.group-1 .A16
+#A16
 {
     width: 319.2px;
     height: 319.2px;
     border-radius: 20px;
     background: black;
-    background-image: url(".././source/dd_chip__rvlsm1bvvgi2_large.jpg");
+    background-image: url(".././source/chip-DP.jpg");
     background-repeat: no-repeat;
-    background-position: 100% 360%;
+    background-position: -300% 500%;
 }
 
-.group-1 .A16 h3
+#A16 h3
 {
     display: inline-block;
     color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
     will-change: transform;
     overflow: hidden;
     font-size: 40px;
@@ -210,10 +205,8 @@
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
     will-change: transform;
     overflow: hidden;
-    background-color: #ffb6ff;
 }
 
 .group-2 .battery .middle
@@ -222,24 +215,26 @@
     transform: translate(-11%, -127%);
     display: inline-block;
     color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
     will-change: transform;
     overflow: hidden;
-    background-color: #ffb6ff;
 }
 
 .group-2 .battery .bottom
 {
     font-size: 55px;
-    transform: translate(5%, -77%);
+    transform: translate(5%, -68%);
     display: inline-block;
     color: transparent;
-    -webkit-background-clip: text;
     background-clip: text;
-    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
     will-change: transform;
     overflow: hidden;
+}
+
+.textGradient
+{
+    -webkit-background-clip: text;
+    background-clip: text;
     background-color: #ffb6ff;
+    background-image: linear-gradient(180deg,#ffb6ff,#b344ff);
 }
