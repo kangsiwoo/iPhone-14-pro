@@ -12,6 +12,7 @@
     padding-bottom: 50px;
 }
 
+
 .section2 h1
 {
     color: #cecece;
@@ -45,5 +46,10 @@ button
     border: 1px solid transparent;
     --sk-button-margin-horizontal: 14px;
     --sk-button-margin-vertical: 14px;
+}
+
+button:hover
+{
+    background-color: #147ce5;
 }
 
