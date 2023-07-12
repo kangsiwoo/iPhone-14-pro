@@ -92,7 +92,7 @@ main
     width: 50%;
     height: 511.7px;
     margin-top: -511.7px;
-    opacity: 0%;
+    opacity: 0;
 }
 
 
@@ -101,6 +101,11 @@ main
     /*width: 998px;*/
     height: 511.3px;
     margin-top: -511.7px;
+}
+
+.allIphoneVideo img
+{
+    transition: opacity 1s ease;
 }
 
 #iphoneVideo
