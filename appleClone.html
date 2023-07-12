@@ -50,26 +50,27 @@
           <li>Deep Purple</li>
           <li>
             <label>
-              <div id="ColorDP" class="color"></div>
+              <div id="ColorDP" class="color" onclick='changeColor("DP")'></div>
             </label>
           </li>
           <li>
             <label>
-              <div id="ColorG" class="color"></div>
+              <div id="ColorG" class="color" onclick='changeColor("G")'></div>
             </label>
           </li>
           <li>
             <label>
-              <div id="ColorS" class="color"></div>
+              <div id="ColorS" class="color" onclick='changeColor("S")'></div>
             </label>
           </li>
           <li>
             <label>
-              <div id="ColorSB" class="color"></div>
+              <div id="ColorSB" class="color" onclick='changeColor("SB")'></div>
             </label>
           </li>
         </ul>
       </section>
+      <script src="./js/change-color.js"></script>
       <section class="allIphoneVideo">
         <video muted autoplay id="iphoneVideo">
           <source src="./source/alliphone.mp4" type="video/mp4">
@@ -86,6 +87,8 @@
           var opacity = 1;
           var fadeInterval;
           var after = imageDP;
+
+          var changeAllow = false
 
           setTimeout(function() {
               fadeInterval = setInterval(function() {
@@ -108,6 +111,7 @@
                       clearInterval(fadeInterval); // 투명도가 0이 되면 반복 종료
                   }
               }, 5); // 각 단계의 시간 간격 (밀리초)
+              changeAllow = true
           }, 5890); // 5.890초 동안 대기 (밀리초)
       </script>
 

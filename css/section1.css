@@ -103,6 +103,11 @@ main
     margin-top: -511.7px;
 }
 
+.allIphoneVideo img
+{
+    transition: opacity 1s ease;
+}
+
 #iphoneVideo
 {
     /*margin-top: -20px;*/
