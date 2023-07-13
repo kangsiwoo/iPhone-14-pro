@@ -78,9 +78,19 @@ main
     height: 20px;
 }
 
+.color:hover
+{
+    cursor: pointer;
+}
+
 #ColorDP
 {
     background-color: #594f63;
+}
+
+#ColorDP:hover
+{
+    cursor: hand;
 }
 
 #ColorG
@@ -88,14 +98,29 @@ main
     background-color: #f4e8ce;
 }
 
+#ColorG:hover
+{
+    cursor: hand;
+}
+
 #ColorS
 {
     background-color: #ffffff;
 }
 
+#ColorS:hover
+{
+    cursor: hand;
+}
+
 #ColorSB
 {
     background-color: #403e3d;
+}
+
+#ColorSB:hover
+{
+    cursor: hand;
 }
 
 .allIphoneVideo
