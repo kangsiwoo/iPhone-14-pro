@@ -9,4 +9,4 @@ Display size : 1640X770
 Pro. Beyond. 옆에 4가지 색을 눌러서 색을 바꿀 수 있음<br>
 색을 바꿀 수 있는 부분이 스크롤과 연동되어 따라옴
 
-## <a href="./appleClone.html">GoTo-Site</a> <br>
+## <a href="https://kangsiwoo.github.io/Apple-Site-Clone/)https://kangsiwoo.github.io/Apple-Site-Clone/">GoTo-Site</a> <br>
